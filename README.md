@@ -26,7 +26,7 @@ For a better management of the project administration we have choosen to split t
 * [MEAN-Stack-DevEnv](https://github.com/micosoft/MEAN-Stack-DevEnv) The MEAN-Stack dockerized as development evironment.
 
 ## The-Classroom General Architecture
-![alt general-arch](https://raw.githubusercontent.com/micosoft/The-Classroom/master/public/img/The-Classroom%20General%20Architecture.png)
+![alt general-arch](https://github.com/micosoft/The-Class-Draft/blob/master/The-Classroom%20General%20Architecture.png)
 ## The-Classroom Website Architecture
 This is the picture for the Website Architecture
 
