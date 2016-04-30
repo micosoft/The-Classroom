@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  p.lead CHK what to give space to the carousel
+  hr
+  .row
+    .col-sm-6
+      include partials/carousel
+  .row
+    .col-sm-6
+      h2 Welcome to The Classroom
+      p This website will help you out to get English classes adapted to your needs.
+    .col-sm-6
+      h2 More coming soon...
+      p The Classroom is under construction.

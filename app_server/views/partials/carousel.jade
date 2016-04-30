@@ -1,0 +1,39 @@
+// Carousel part
+.container
+  #myCarousel.carousel.slide(data-ride='carousel')
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel', data-slide-to='0')
+
+      li(data-target='#myCarousel', data-slide-to='1')
+
+      li(data-target='#myCarousel', data-slide-to='2')
+
+      li(data-target='#myCarousel', data-slide-to='3')
+    // Wrapper for slides
+    .carousel-inner(role='listbox')
+      .item.active
+        a(href='#')
+          img(src='/images/regular english.jpg', alt='Regular English', width='460', height='345')
+
+      .item
+        a(href='#')
+          img(src='/images/english bussiness class.jpg', alt='English bussiness class', width='460', height='345')
+
+      .item
+        a(href='#')
+          img(src='/images/resume cv and interviews.jpg', alt='Resume, CV and Interviews', width='460', height='345')
+
+      .item
+        a(href='#')
+          img(src='/images/english for kids.jpg', alt='English for kids', width='460', height='345')
+    // Left and right controls
+    a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+
+      span.sr-only Previous
+
+    a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+
+      span.sr-only Next
