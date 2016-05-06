@@ -3,20 +3,30 @@ var router = express.Router();
 
 // to use the controller assigned to this view
 var ctrlMain = require('../controllers/main');
+
+
 /*
-/* GET home page. */
-//router.get('/', function(req, res, next) {
-//  res.render('index', { title: 'Express' });
-//});
+users controller
+*/
+var ctrlMainStudents = require('../controllers/students/index');
+//var ctrlLessons = require('../controllers/students/lessons');
+//var ctrlBooking = require('../controllers/students/booking');
+//var ctrlTeachers = require('../controllers/students/teachers');
+//var ctrlMessages = require('../controllers/messaging/messages');
 
-// taking the controller out of the route probe of concept
-//var homepageController = function (req, res) {
-//  res.render('index', { title : 'controller out of the route'});
-//}
+/*
+teachears controllers
+*/
 
-/* GET home page */
-//router.get('/', 'homepageController');
+/*
+general controllers
+*/
 
 router.get('/', ctrlMain.index);
+
+router.get('/student', ctrlMainStudents.index)
+
+
+//students controllers
 
 module.exports = router;
