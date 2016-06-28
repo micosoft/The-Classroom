@@ -1,9 +1,17 @@
 extends ../layout
 
-block content
+block content  
   p.lead CHK what to give space to the carousel
   hr
   .row
     .col-sm-6
       h2 Welcome to The Classroom
       p Learner
+      div(ng-view)
+
+      link(rel='stylesheet', href='scripts/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css')
+      script(src='scripts/angular/angular.min.js')
+      script(src='scripts/angular-route/angular-route.min.js')
+      script(src='scripts/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.min.js')
+      script(src='js/app.js')
+      script(src='js/controllers.js')

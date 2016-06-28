@@ -76,6 +76,7 @@ app.use(compress());
   dest: path.join(__dirname, 'public'),
   sourceMap: true
 }));*/
+app.use('/scripts', express.static(__dirname + '/node_modules'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());

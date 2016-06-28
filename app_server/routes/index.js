@@ -1,3 +1,4 @@
+var passportConfig = require('../config/passport');
 var express = require('express');
 var router = express.Router();
 
@@ -24,7 +25,8 @@ general controllers
 
 router.get('/', ctrlMain.index);
 
-router.get('/student', ctrlMainStudents.index)
+router.get('/student', passportConfig.isAuthenticated, ctrlMainStudents.index)
+router.get('/partials/:name', passportConfig.isAuthenticated, ctrlMainStudents.partials);
 
 
 //students controllers

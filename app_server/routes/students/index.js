@@ -1,4 +1,5 @@
 var express = require('express');
+var passportConfig = require('../../config/passport');
 var router = express.Router();
 
 
@@ -9,6 +10,7 @@ var ctrlTeachers = require('../controllers/students/teachers');
 var ctrlMessages = require('../controllers/messaging/messages');
 
 
-router.get('/', ctrlMain.index);
+router.get('/', passportConfig.isAuthenticated, ctrlMain.index);
+router.get('/partials/:name', passportConfig.isAuthenticated, ctrlMain.partials);
 
 module.exports = router;
